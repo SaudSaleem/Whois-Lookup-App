@@ -1,6 +1,6 @@
 {
   "name": "whois-lookup",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Use whois command for DNS queries in node",
   "main": "index.js",
   "scripts": {

@@ -1,20 +1,26 @@
 # whois-lookup [![npm version](https://badge.fury.io/js/whois-lookup.svg)](https://badge.fury.io/js/whois-lookup)
+
 This is a simple wrapper for the unix/linux/macos whois command. Output contain raw JSON data and registration_date, updated_date, expiry_date of domain
 
 ## Install
+
 ```
 npm i whois-lookup
 ```
 
 ## Usage
+
 ```
 const whois = require('whois-lookup')
 ```
+
 You can add [all args from whois](https://linux.die.net/man/1/whois) to the args array.
+
 ### Examples
+
 ```
 const whois = require('whois-lookup')
-whois.lookup(['google.com'])
+whois(['google.com'])
   .then((result) => {
     console.log(result)
   })
@@ -26,6 +32,7 @@ whois.lookup(['google.com'])
 ## Result
 
 The whois of particular domain address returns the object with following properties error, registration_date, updated_date, expiry_date, rawData
+
 ```
 {
   error: false,

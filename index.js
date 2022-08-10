@@ -1,6 +1,6 @@
 const domainHelper = require("./helpers");
 
-const lookup = async (args) => {
+const whois = async (args) => {
   if (Array.isArray(args)) {
     try {
       const data = await domainHelper.whois(args);
@@ -13,4 +13,4 @@ const lookup = async (args) => {
   }
 };
 
-module.exports = lookup;
+module.exports = whois;
